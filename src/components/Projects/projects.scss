@@ -1,0 +1,58 @@
+@import '../../vars';
+
+section#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 125px;
+  padding: 0 115px;
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .items {
+    display: flex;
+    gap: 124px;
+    margin-top: 52px;
+
+    .item {
+      img {
+        width: 545px;
+        height: 590px;
+      }
+
+      h1 {
+        font-size: 3.6rem;
+      }
+
+      p {
+        margin-top: 35px;
+        font-size: 3.2rem;
+        font-weight: 400;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 65px;
+      margin-top: 50px;
+
+      button {
+        padding: 25px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

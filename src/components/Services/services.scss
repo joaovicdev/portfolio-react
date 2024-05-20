@@ -1,0 +1,49 @@
+@import '../../vars';
+
+section#services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  padding: 0 65px;
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .cards {
+    display: flex;
+    gap: 65px;
+    margin-top: 60px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $blue-300;
+      padding: 50px;
+
+      .texts {
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          font-size: 3.6rem;
+        }
+
+        p {
+          font-size: 2.0rem;
+          text-align: center;
+        }
+      }
+
+      img {
+        width: 250px;
+        height: auto;
+      }
+    }
+  }
+}
