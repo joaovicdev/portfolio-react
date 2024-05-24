@@ -22,9 +22,9 @@
 @media (max-width: $bkpoint-mobile) {
   footer {
     display: flex;
-    padding: 25px 35px;
+    padding: 25px 20px;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
   }
 }
 /* === END MOBILE === */
