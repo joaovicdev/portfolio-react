@@ -65,6 +65,7 @@
 
     .cards {
       display: flex;
+      margin-top: 10px;
 
       .card {
         padding: 18px;
@@ -81,6 +82,10 @@
             font-size: 1.6rem;
             text-align: center;
           }
+        }
+
+        &.hidden {
+          display: none;
         }
       }
     }

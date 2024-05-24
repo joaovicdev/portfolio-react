@@ -1,58 +1,94 @@
 @import '../../vars';
 
-section#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 125px;
-  padding: 0 115px;
-
-  h1 {
-    font-size: 3.6rem;
-  }
-
-  .items {
+/*  === DESKTOP === */
+@media (min-width: 769px) {
+  section#projects {
     display: flex;
-    gap: 124px;
-    margin-top: 52px;
-
-    .item {
-      img {
-        width: 545px;
-        height: 590px;
-      }
-
-      h1 {
-        font-size: 3.6rem;
-      }
-
-      p {
-        margin-top: 35px;
-        font-size: 3.2rem;
-        font-weight: 400;
-      }
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    padding: 0 115px;
+  
+    h1 {
+      font-size: 3.6rem;
     }
-
-    .buttons {
+  
+    .items {
       display: flex;
-      gap: 65px;
-      margin-top: 50px;
-
-      button {
-        padding: 25px;
-        border-radius: 50%;
-        background-color: #fff;
-        border: none;
-
-        &:hover {
-          cursor: pointer;
+      gap: 124px;
+      margin-top: 52px;
+  
+      .item {
+        img {
+          width: 545px;
+          height: 590px;
         }
-
-        &.disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
+  
+        h1 {
+          font-size: 3.6rem;
+        }
+  
+        p {
+          margin-top: 35px;
+          font-size: 3.2rem;
+          font-weight: 400;
+        }
+      }
+  
+      .buttons {
+        display: flex;
+        gap: 65px;
+        margin-top: 50px;
+  
+        button {
+          padding: 25px;
+          border-radius: 50%;
+          background-color: #fff;
+          border: none;
+  
+          &:hover {
+            cursor: pointer;
+          }
+  
+          &.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
         }
       }
     }
   }
 }
+
+/*  === END DESKTOP === */
+
+/* === MOBILE === */
+@media (max-width: $bkpoint-mobile) {
+  section#projects {
+    margin-top: 21px;
+    padding: 0 21px;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    .card {
+      margin-top: 22px;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      img {
+        margin-top: 12px;
+        width: 280px;
+        height: 228px;
+      }
+    }
+  }
+}
+/* === END MOBILE === */

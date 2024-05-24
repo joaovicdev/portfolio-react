@@ -18,14 +18,14 @@ export const Services: React.FC = () => {
               melhor atender o seu cliente.</p>
           </div>
         </div>
-        <div className="card">
+        <div className="card hidden">
           <img src={systemImage} alt="Sistemas" />
           <div className="texts">
             <h1>Sistemas</h1>
             <p>Sistemas de controle e gestão de dados para a sua empresa, com plataformas completas.</p>
           </div>
         </div>
-        <div className="card">
+        <div className="card hidden">
           <img src={designImage} alt="Design" />
           <div className="texts">
             <h1>Design</h1>
