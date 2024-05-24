@@ -1,14 +1,30 @@
 @import '../../vars';
 
-footer {
-  background-color: $gray;
-  padding: 28px 100px;
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-  justify-content: space-between;
-
-  h1 {
-    font-size: 2.4rem;
+/*  === DESKTOP === */
+@media (min-width: 769px) {
+  footer {
+    background-color: $gray;
+    padding: 28px 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+  
+    h1 {
+      font-size: 2.4rem;
+    }
   }
 }
+
+/*  === END DESKTOP === */
+
+/* === MOBILE === */
+@media (max-width: $bkpoint-mobile) {
+  footer {
+    display: flex;
+    padding: 25px 35px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* === END MOBILE === */

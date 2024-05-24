@@ -1,19 +1,11 @@
 import React from 'react';
-import aboutImage from '../../assets/images/about.png';
+import { useIsMobile } from '../../hooks/useIsMobile';
+import { Mobile } from './Mobile';
+import { Desktop } from './Desktop';
 import './about.scss';
 
 export const About: React.FC = () => {
-  return (
-    <section id="about">
-      <img src={aboutImage} />
+  const isMobile = useIsMobile();
 
-      <div className="texts">
-        <h1>Um pouco sobre mim</h1>
-        <p>Desenvolvedor FullStack atuando a mais de 7 anos em projetos 
-          profissionais, comecei aos 14 desenvolvendo projetos para pequenas 
-          instituições, e desde então venho prestando serviço e consultoria em 
-          tecnologia para diversos clientes.</p>
-      </div>
-    </section>
-  );
+  return isMobile ? <Mobile /> : <Desktop />;
 };
