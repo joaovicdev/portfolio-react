@@ -1,4 +1,4 @@
-interface projectDatabase {
+export interface projectDatabase {
   title: string;
   description: string;
   image: string;

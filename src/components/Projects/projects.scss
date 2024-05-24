@@ -74,6 +74,7 @@
 
     .card {
       margin-top: 22px;
+      width: 100%;
 
       h1 {
         font-size: 1.6rem;
@@ -87,6 +88,24 @@
         margin-top: 12px;
         width: 280px;
         height: 228px;
+      }
+    }
+
+    .counter-swiper {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 13px;
+
+      .grey {
+        width: 17px;
+        height: 17px;
+        background-color: #fff;
+        border-radius: 50%;
+
+        &.active {
+          background-color: $red;
+        }
       }
     }
   }

@@ -1,5 +1,7 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { projectDatabase } from './projects';
+import 'swiper/css';
 import './projects.scss';
 
 export const Mobile: React.FC = () => {
@@ -23,11 +25,27 @@ export const Mobile: React.FC = () => {
     <section id="projects">
       <h1>Projetos que já desenvolvi</h1>
 
-      <div className="card">
-        <h1>{projectDatabase[currentProjectIndex].title}</h1>
-        <p>{projectDatabase[currentProjectIndex].description}</p>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper: any) => console.log(swiper)}
+      >
+        {projectDatabase.map((project: projectDatabase, _: number) => (
+          <SwiperSlide key={`swiper-${_}`} className="card">
+            <h1>{project.title}</h1>
+            <p>{project.description}</p>
+            <img src={require(`../../assets/images/projects/${project.image}`)} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-        <img src={require(`../../assets/images/projects/${projectDatabase[currentProjectIndex].image}`)} />
+      <div className="counter-swiper">
+        {Object(projectDatabase).map((project: projectDatabase, _: number) => {
+          return (
+            <div key={`swiper-${_}`} className={`grey ${_ === currentProjectIndex ? 'active' : ''}`}></div>
+          );
+        })}
       </div>
     </section>
   );
