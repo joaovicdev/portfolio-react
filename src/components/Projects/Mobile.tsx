@@ -11,11 +11,16 @@ export const Mobile: React.FC = () => {
 
       <Swiper
         slidesPerView={1}
+        spaceBetween={20}
         autoplay={{ delay: 2000, reverseDirection: true }}
         onSlideChange={() => console.log('slide change')}
       >
         {projectDatabase.map((project: projectDatabase, _: number) => (
-          <SwiperSlide key={`swiper-${_}`} className="card">
+          <SwiperSlide key={`swiper-${_}`} className="card" onClick={() => {
+            if (project.link) {
+              window.open(project.link, '_blank');
+            }
+          }}>
             <h1>{project.title}</h1>
             <p>{project.description}</p>
             <img src={require(`../../assets/images/projects/${project.image}`)} />
