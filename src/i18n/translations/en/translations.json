@@ -3,6 +3,28 @@
 
   },
   "about": {
-    "title": "A little about myself"
+    "title": "A little about myself",
+    "description": "FullStack developer working for more than 7 years on professional projects, I started at 14 developing projects for small institutions, and since then I have been providing services and technology consultancy to several clients."
+  },
+  "projects": {
+    "title": "Projects I have already developed"
+  },
+  "services": {
+    "title": "What can I do for you?",
+    "card1": {
+      "title": "Web sites",
+      "description": "Sites de vendas, landing pages e sites institucionais para melhor atender o seu cliente."
+    },
+    "card2": {
+      "title": "Sistemas",
+      "description": "Sistemas de controle e gestão de dados para a sua empresa, com plataformas completas."
+    },
+    "card3": {
+      "title": "Design",
+      "description": "Prototipação e criação de telas em softwares para interface usuais e bonitas feitas para o seu negócio."
+    }
+  },
+  "footer": {
+    "disclaimer": "JV MIDIA NEGOCIOS DIGITAIS LTDA - 41.557.171/0001-01"
   }
 }

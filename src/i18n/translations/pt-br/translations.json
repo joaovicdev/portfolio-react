@@ -6,6 +6,9 @@
     "title": "Um pouco sobre mim",
     "description": "Desenvolvedor FullStack atuando a mais de 7 anos em projetos profissionais, comecei aos 14 desenvolvendo projetos para pequenas instituições, e desde então venho prestando serviço e consultoria em tecnologia para diversos clientes."
   },
+  "projects": {
+    "title": "Projetos que já desenvolvi"
+  },
   "services": {
     "title": "O que eu posso fazer por você?",
     "card1": {
