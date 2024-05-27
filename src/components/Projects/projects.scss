@@ -108,5 +108,21 @@
       }
     }
   }
+
+  .swiper-pagination {
+    bottom: 0;
+    position: static;
+
+    .swiper-pagination-bullet {
+      width: 17px;
+      height: 17px;
+      background: #fff;
+      opacity: 1;
+
+      &.swiper-pagination-bullet-active {
+        background: $red;
+      }
+    }
+  }
 }
 /* === END MOBILE === */

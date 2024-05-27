@@ -1,7 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { projectDatabase } from './projects';
+
 import 'swiper/css';
+import 'swiper/css/bundle';
 import './projects.scss';
 
 export const Mobile: React.FC = () => {
@@ -10,10 +13,14 @@ export const Mobile: React.FC = () => {
       <h1>Projetos que já desenvolvi</h1>
 
       <Swiper
+        speed={5000}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination]}
+
         slidesPerView={1}
         spaceBetween={20}
-        autoplay={{ delay: 2000, reverseDirection: true }}
-        onSlideChange={() => console.log('slide change')}
       >
         {projectDatabase.map((project: projectDatabase, _: number) => (
           <SwiperSlide key={`swiper-${_}`} className="card" onClick={() => {
