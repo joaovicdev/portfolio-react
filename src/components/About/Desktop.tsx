@@ -1,4 +1,5 @@
 import React from 'react';
+import { t } from 'i18next';
 import aboutImage from '../../assets/images/about.png';
 import './about.scss';
 
@@ -8,11 +9,8 @@ export const Desktop: React.FC = () => {
       <img src={aboutImage} />
 
       <div className="texts">
-        <h1>Um pouco sobre mim</h1>
-        <p>Desenvolvedor FullStack atuando a mais de 7 anos em projetos 
-          profissionais, comecei aos 14 desenvolvendo projetos para pequenas 
-          instituições, e desde então venho prestando serviço e consultoria em 
-          tecnologia para diversos clientes.</p>
+        <h1>{t('about.title')}</h1>
+        <p>{t('about.description')}</p>
       </div>
     </section>
   );
