@@ -17,7 +17,7 @@ i18next.use(initReactI18next).init({
   interpolation: { escapeValue: false },
   lng: 'pt',
   resources,
-  debug: true
+  debug: true,
 });
 
 export default i18next;
