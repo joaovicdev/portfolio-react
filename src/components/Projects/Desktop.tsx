@@ -48,21 +48,13 @@ export const Desktop: React.FC = () => {
 
       <div className="items">
         <div className="item">
-          <a href={projectDatabase[currentProjectIndex][language].link ? projectDatabase[currentProjectIndex][language].link : '#'}>
+          <a target="_blank" href={projectDatabase[currentProjectIndex][language].link ? projectDatabase[currentProjectIndex][language].link : '#'}>
             <img src={require(`../../assets/images/projects/${projectDatabase[currentProjectIndex][language].image}`)} />
           </a>
         </div>
         <div className="item">
           <h1>{projectDatabase[currentProjectIndex][language].title}</h1>
           <p>{projectDatabase[currentProjectIndex][language].description}</p>
-          <div className="buttons">
-            <button type="button" onClick={prevProjectHandle} className={disabledPrevBtn ? 'disabled' : ''}>
-              <i className="fa-solid fa-arrow-left"></i>
-              </button>
-            <button type="button" onClick={nextProjectHandle} className={disabledNextBtn ? 'disabled' : ''}>
-              <i className="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
         </div>
       </div>
     </section>

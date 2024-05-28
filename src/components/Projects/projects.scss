@@ -15,45 +15,23 @@
   
     .items {
       display: flex;
-      gap: 124px;
+      flex-direction: column;
       margin-top: 52px;
   
       .item {
         img {
-          width: 545px;
-          height: 590px;
+          width: 100%;
         }
   
         h1 {
-          font-size: 3.6rem;
+          font-size: 2.8rem;
+          margin-top: 30px;
         }
   
         p {
-          margin-top: 35px;
-          font-size: 3.2rem;
+          font-size: 2.0rem;
           font-weight: 400;
-        }
-      }
-  
-      .buttons {
-        display: flex;
-        gap: 65px;
-        margin-top: 50px;
-  
-        button {
-          padding: 25px;
-          border-radius: 50%;
-          background-color: #fff;
-          border: none;
-  
-          &:hover {
-            cursor: pointer;
-          }
-  
-          &.disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-          }
+          margin-top: 10px;
         }
       }
     }
@@ -107,20 +85,20 @@
         }
       }
     }
-  }
 
-  .swiper-pagination {
-    bottom: 0;
-    position: static;
-
-    .swiper-pagination-bullet {
-      width: 17px;
-      height: 17px;
-      background: #fff;
-      opacity: 1;
-
-      &.swiper-pagination-bullet-active {
-        background: $red;
+    .swiper-pagination {
+      bottom: 0;
+      position: static;
+  
+      .swiper-pagination-bullet {
+        width: 17px;
+        height: 17px;
+        background: #fff;
+        opacity: 1;
+  
+        &.swiper-pagination-bullet-active {
+          background: $red;
+        }
       }
     }
   }
