@@ -1,5 +1,5 @@
 import React from 'react';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -10,6 +10,7 @@ import 'swiper/css/bundle';
 import './projects.scss';
 
 export const Mobile: React.FC = () => {
+  const { t } = useTranslation();
   const { language } = useLanguage();
 
   return (

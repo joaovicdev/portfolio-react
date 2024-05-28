@@ -1,9 +1,11 @@
 import React from 'react';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import aboutImage from '../../assets/images/about.png';
 import './about.scss';
 
 export const Desktop: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about">
       <img src={aboutImage} />

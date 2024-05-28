@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { projectDatabase } from './projects';
 import './projects.scss';
 
 export const Desktop: React.FC = () => {
+  const { t } = useTranslation();
   const { language } = useLanguage();
   const [currentProjectIndex, setCurrentProjectIndex] = React.useState(0);
   const [disabledPrevBtn, setDisabledPrevBtn] = React.useState(true);
@@ -42,7 +44,7 @@ export const Desktop: React.FC = () => {
 
   return (
     <section id="projects">
-      <h1>Projetos que já desenvolvi</h1>
+      <h1>{t('projects.title')}</h1>
 
       <div className="items">
         <div className="item">

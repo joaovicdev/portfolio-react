@@ -1,11 +1,13 @@
 import React from 'react';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import sitesImage from '../../assets/images/sites.svg';
 import systemImage from '../../assets/images/systems.svg';
 import designImage from '../../assets/images/design.svg';
 import './services.scss';
 
 export const Services: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="services">
       <h1>{t('services.title')}</h1>
