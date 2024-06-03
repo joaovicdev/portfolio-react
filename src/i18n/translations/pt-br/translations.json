@@ -1,6 +1,9 @@
 {
   "header": {
-
+    "about": "Sobre",
+    "projects": "Projetos",
+    "services": "Serviços",
+    "contact": "Contato"
   },
   "about": {
     "title": "Um pouco sobre mim",

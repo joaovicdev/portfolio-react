@@ -3,13 +3,13 @@ export interface projectDatabase {
     title: string;
     description: string;
     image: string;
-    link: string;
+    link?: string;
   };
   en: {
     title: string;
     description: string;
     image: string;
-    link: string;
+    link?: string;
   };
 }
 

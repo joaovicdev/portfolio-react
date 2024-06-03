@@ -1,6 +1,9 @@
 {
   "header": {
-
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact"
   },
   "about": {
     "title": "A little about myself",
